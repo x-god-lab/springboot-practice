@@ -19,6 +19,19 @@
     </properties>
 
     <dependencies>
+
+        <!--代码自动生成器-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+        <!-- 模板引擎 Velocity，Mybatis-plus自动生成代码需要-->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.2</version>
+        </dependency>
         <!--依赖 p6spy 组件，完美的输出打印 SQL 及执行时长-->
         <!-- https://mvnrepository.com/artifact/p6spy/p6spy -->
         <dependency>
