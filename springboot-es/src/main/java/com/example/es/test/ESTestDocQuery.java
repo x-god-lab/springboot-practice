@@ -170,6 +170,7 @@ public class ESTestDocQuery {
 
         SearchHits hits = response.getHits();
 
+
         System.out.println(hits.getTotalHits());
         System.out.println(response.getTook());
 
