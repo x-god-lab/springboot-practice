@@ -22,7 +22,7 @@ public class ESTestDocGet {
 
         // 查询数据
         GetRequest request = new GetRequest();
-        request.index("person").id("1001");
+        request.index("person").id("1010");
         GetResponse response = restHighLevelClient.get(request, RequestOptions.DEFAULT);
 
         System.out.println(response.getSource());

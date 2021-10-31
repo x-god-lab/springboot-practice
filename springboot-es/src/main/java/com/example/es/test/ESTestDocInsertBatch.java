@@ -25,11 +25,11 @@ public class ESTestDocInsertBatch {
         // 批量插入数据
         BulkRequest request = new BulkRequest();
 
-        request.add(new IndexRequest().index("person").id("1001").source(XContentType.JSON,"name","张三","sex","男","age",30L));
-        request.add(new IndexRequest().index("person").id("1002").source(XContentType.JSON,"name","李四","sex","男","age",30L));
-        request.add(new IndexRequest().index("person").id("1003").source(XContentType.JSON,"name","王五","sex","女","age",40L));
-        request.add(new IndexRequest().index("person").id("1004").source(XContentType.JSON,"name","孙六","sex","男","age",20L));
-        request.add(new IndexRequest().index("person").id("1005").source(XContentType.JSON,"name","钱七","sex","女","age",50L));
+        request.add(new IndexRequest().index("person").id("1006").source(XContentType.JSON,"name","王五1","sex","男","age",30L));
+        request.add(new IndexRequest().index("person").id("1007").source(XContentType.JSON,"name","王五2","sex","男","age",30L));
+        request.add(new IndexRequest().index("person").id("1008").source(XContentType.JSON,"name","王五3","sex","女","age",40L));
+        request.add(new IndexRequest().index("person").id("1009").source(XContentType.JSON,"name","王五33","sex","男","age",20L));
+        request.add(new IndexRequest().index("person").id("1010").source(XContentType.JSON,"name","王五44","sex","女","age",50L));
 
         BulkResponse response = restHighLevelClient.bulk(request, RequestOptions.DEFAULT);
 
